@@ -93,3 +93,14 @@ variable "github_repository" {
   description = "Github repository in which to create the build agent. e.g. UCLH-Foundry/FlowEHR"
   default     = ""
 }
+
+variable "purview" {
+  type = object({
+    enabled                = bool
+    public_network_enabled = bool
+  })
+  default = {
+    enabled                = false
+    public_network_enabled = false
+  }
+}

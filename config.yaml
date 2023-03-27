@@ -5,6 +5,10 @@ environment: infra-test
 accesses_real_data: false
 core_address_space: 10.0.0.0/24
 
+purview:
+  enabled: true
+  public_network_enabled: false
+
 transform:
   spark_version: 3.3.1
   datalake:
